@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="vendors/css/grid-min.css">
+  <link rel="stylesheet" type="text/css" href="vendors/css/normalize8-min.css">
+  <link rel="stylesheet" type="text/css" href="resources/css/style-min.css">
+  <link rel="stylesheet" type="text/css" href="resources/css/queries-min.css">
+  <link rel="shortcut icon" href="resources/favicons/favicon.ico">
+
+
+  <title>Contacto</title>
+</head>
+
+<body>
+  <div class="thanks">
+    <div class="row">
+      <h4>
+        &iexcl; Gracias por contactarnos &excl;
+      </h4>
+      <p class="mensaje-cont">Hemos recibido correctamente tu mensaje y nuestro equipo contactará contigo lo antes
+        posible.</p>
+    </div>
+  </div>
+  <p class="red">Redireccionando..</p>
+  <div class="row" id="number"></div>
+  <img class="logo-thanks" src="resources/img/logo3.png" alt="">
+
+
+  <div> </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script>
+    var n = 1;
+    var l = document.getElementById("number");
+    window.setInterval(function () {
+      l.innerHTML = n;
+      n++;
+    }, 1000);
+  </script>
+  <script> 
+    $(document).ready(function () {
+      
+      setTimeout(refrescar, 5000);
+    });
+    function refrescar() { 
+
+      location.href = 'index.html';
+    } </script>
+
+</body>
+
+</html>
